@@ -6,6 +6,21 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+	<!-- remixicon -->
+	
+	<link
+	    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+	    rel="stylesheet"
+	/>
+
+	<!-- phosphor icons -->
+	
+	<link
+	      rel="stylesheet"
+	      type="text/css"
+	      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+	/>
+	
 	<!-- Google Font -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +39,7 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+			font-family: 'Roboto Mono', sans-serif;
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
@@ -44,13 +59,13 @@
 		}
 
 		.border {
-			border: 1px solid #cccccc;
+			border: 0px solid #cccccc;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #BBD4AD;
 		}
 	</style>
 </head>
@@ -58,18 +73,16 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
-		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
-		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
-		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="ri-home-heart-fill"></i></a>
+		<a id="calendar" onclick="navigate(this.id)" href="#"> <i class="ph ph-calendar"></i> calendar</a>
+		<a id="schedule" onclick="navigate(this.id)" href="#"> <i class="ph ph-hourglass"></i> schedule</a>
+		<a id="to-do" onclick="navigate(this.id)" href="#"> <i class="ri-list-check-3"></i> to-do</a>
+		<a id="assignments" onclick="navigate(this.id)" href="#"> <i class="ph ph-student"></i> assignments</a>
+		<a id="subjects" onclick="navigate(this.id)" href="#"> <i class="ri-book-2-fill"></i> subjects</a>
+		<a id="library" onclick="navigate(this.id)" href="#"> <i class="ph ph-books"></i> library</a>
+		<a id="fun" onclick="navigate(this.id)" href="#"> <i class="ri-armchair-fill"></i> fun</a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="ri-links-line"></i> resources</a>
+		<a id="archive" onclick="navigate(this.id)" href="#"> <i class="ri-archive-fill"></i> archive</a>
 
 
 
@@ -88,29 +101,23 @@
 
 			if (id == 'home')
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "inbox")
+			else if (id == "calendar")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "week")
+			else if (id == "schedule")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
+			else if (id == "to-do")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
+			else if (id == "assignments")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
+			else if (id == "subjects")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "tasks")
+			else if (id == "library")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
+			else if (id == "fun")
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "topics")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "notes")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "media")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
+			else if (id == "resources")
 				window.open("https://example.com3", '_blank').focus();
-			else if (id == "lifewiki")
+			else if (id == "archive")
 				window.open("https://example.com", '_blank').focus();
 
 		}
